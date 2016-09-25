@@ -1001,7 +1001,7 @@ int64_t GetProofOfStakeReward(int64_t nCoinAge, int64_t nFees)
 
     nRewardCoinYear = MAX_MINT_PROOF_OF_STAKE;
 
-    if (pindexBest->nHeight == INVESTOR_COIN_MINT_HEIGHT)
+    if (pindexBest->nHeight+1 == INVESTOR_COIN_MINT_HEIGHT)
         nSubsidy = INVESTOR_REWARD;  
     else
         nSubsidy = nCoinAge * nRewardCoinYear / 365 / COIN;        
