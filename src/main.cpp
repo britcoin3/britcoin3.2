@@ -997,7 +997,6 @@ int64_t GetProofOfStakeReward(int64_t nCoinAge, int64_t nFees)
 {
     int64_t nRewardCoinYear;
     int64_t nSubsidy = 0;
-    bool fSpecial = false;
 
     nRewardCoinYear = MAX_MINT_PROOF_OF_STAKE;
 
