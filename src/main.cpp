@@ -1984,22 +1984,6 @@ bool CTransaction::GetCoinAge(CTxDB& txdb, uint64_t& nCoinAge) const
         printf("coin age bnCoinDay=%s\n", bnCoinDay.ToString().c_str());
     nCoinAge = bnCoinDay.getuint64();
     return true;
-    
-    /* non-syncing code from mammix2
-    CBigNum bnCoinDay;
-
-    if(pindexBest->nHeight >= LAST_OLD_POS_BLOCK) {
-        bnCoinDay = bnCentSecond * CENT / COIN / (24 * 60 * 60);
-    }else{
-        bnCoinDay = bnCentSecond * CENT / (24 * 60 * 60);
-    }
-
-    
-    if (fDebug && GetBoolArg("-printcoinage"))
-        printf("coin age bnCoinDay=%s\n", bnCoinDay.ToString().c_str());
-    nCoinAge = bnCoinDay.getuint64();
-    return true;
-    */
 }
 
 // britcoin: total coin age spent in block, in the unit of coin-days.

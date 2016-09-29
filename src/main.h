@@ -27,7 +27,6 @@ class CRequestTracker;
 class CNode;
 
 static const int LAST_POW_BLOCK = 20000;
-//static const int LAST_OLD_POS_BLOCK = 987000;
 static const unsigned int MAX_BLOCK_SIZE = 1000000;
 static const unsigned int MAX_BLOCK_SIZE_GEN = MAX_BLOCK_SIZE/2;
 static const unsigned int MAX_BLOCK_SIGOPS = MAX_BLOCK_SIZE/50;
@@ -46,7 +45,7 @@ static const int64_t V2_CHAIN_PARAMS_TIME = 1457179200; // V2 chain switch, 5 Ma
 #define INVESTOR_ADDRESS_TESTNET "miugsPSEX1GZjZaeJtfBTAjCLzqxyeaPu7"
 
 static const int64_t INVESTOR_REWARD = 10000000 * COIN;
-static const int INVESTOR_COIN_MINT_HEIGHT = 1020000;
+static const int INVESTOR_COIN_MINT_HEIGHT = 1075000;
 
 
 inline bool MoneyRange(int64_t nValue) { return (nValue >= 0 && nValue <= MAX_MONEY); }
