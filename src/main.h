@@ -45,7 +45,7 @@ static const int64_t V2_CHAIN_PARAMS_TIME = 1457179200; // V2 chain switch, 5 Ma
 #define INVESTOR_ADDRESS_TESTNET "miugsPSEX1GZjZaeJtfBTAjCLzqxyeaPu7"
 
 static const int64_t INVESTOR_REWARD = 10000000 * COIN;
-static const int INVESTOR_COIN_MINT_HEIGHT = 1075000;
+static const int INVESTOR_COIN_MINT_HEIGHT = 1038000;  // mint new coins on Sat 8th Oct 2016
 
 
 inline bool MoneyRange(int64_t nValue) { return (nValue >= 0 && nValue <= MAX_MONEY); }
